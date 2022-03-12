@@ -2,11 +2,12 @@ import { routes } from '@app/navigation/routes';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Welcome = () => {
     const navigator = useNavigation();
     return (
-        <View
+        <SafeAreaView
             style={{
                 backgroundColor: 'red',
                 flex: 1,
@@ -20,7 +21,7 @@ const Welcome = () => {
                 <Text>test324</Text>
             </TouchableOpacity>
             <Text>welcome</Text>
-        </View>
+        </SafeAreaView>
     );
 };
 
